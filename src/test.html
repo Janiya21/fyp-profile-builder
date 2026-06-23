@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Closures </title>
+    <script>
+        function outerFunction(outerVariable) {
+            return function innerFunction(innerVariable) {
+                console.log(`Outer: ${outerVariable}, Inner: ${innerVariable}`);
+            };
+        }
+        const closureExample = outerFunction("Hello");
+        closureExample("World");
+
+        // -----------------------------------
+
+        function Person(name) {
+            this.name = name;
+        }
+
+        Person.prototype.sayHelloX = function () {
+            console.log(`Hello, my name is ${this.name}`);
+        };
+
+        const person1 = new Person("Alice");
+        person1.sayHelloX(); // Output: Hello, my name is Alice
+
+        console.log(person1.__proto__ === Person.prototype); // true
+        console.log(Person.prototype.__proto__ === Object.prototype); // true
+        console.log(Object.prototype.__proto__ === null);
+    </script>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+</body>
+
+</html>
