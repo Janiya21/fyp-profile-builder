@@ -11,6 +11,10 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+				outfit: ['Outfit', 'sans-serif'],
+			},
 			animation: {
 				'fade-up': 'fade-up 0.7s ease-out forwards',
 				'scale-in': 'scale-in 0.7s ease-out forwards',

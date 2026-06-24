@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, Suspense } from 'react';
 import { Card, Button, Spinner, Divider, Chip, Avatar, Tooltip } from '@heroui/react';
-import { FiEdit2, FiExternalLink, FiEye, FiEyeOff, FiGlobe, FiPlus, FiTrash2 } from 'react-icons/fi';
+import { FiEdit2, FiExternalLink, FiEye, FiEyeOff, FiGlobe, FiPlus, FiTrash2, FiActivity, FiBriefcase, FiDownload } from 'react-icons/fi';
 import { useSession } from 'next-auth/react';
 import SessionProviderWrapper from '@/components/SessionProviderWrapper';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -264,7 +264,7 @@ function UserProfile() {
                 <div>
                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
                         <div className='w-full'>
-                            <div className="flex items-center justify-between w-full pe-4 py-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+                            <div className="flex items-center justify-between w-full pe-4 py-3 ">
                                 <div className="flex items-center gap-3">
                                     <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
                                         <MdWeb size={24} className="text-blue-600 dark:text-blue-400" />
@@ -446,6 +446,42 @@ function UserProfile() {
                                             >
                                                 <FaChalkboardTeacher />
                                             </Button>
+
+                                            <Tooltip content="AI Quality Analysis" placement="top">
+                                                <Button
+                                                    isIconOnly
+                                                    variant="light"
+                                                    aria-label="AI Analysis"
+                                                    className="text-indigo-500 dark:text-indigo-400"
+                                                    onPress={() => { router.push(`/dashboard/analysis?websiteId=${website._id}`) }}
+                                                >
+                                                    <FiActivity />
+                                                </Button>
+                                            </Tooltip>
+
+                                            <Tooltip content="Job Matcher" placement="top">
+                                                <Button
+                                                    isIconOnly
+                                                    variant="light"
+                                                    aria-label="Job Matcher"
+                                                    className="text-pink-500 dark:text-pink-400"
+                                                    onPress={() => { router.push(`/dashboard/job-match?websiteId=${website._id}`) }}
+                                                >
+                                                    <FiBriefcase />
+                                                </Button>
+                                            </Tooltip>
+
+                                            <Tooltip content="Export CV" placement="top">
+                                                <Button
+                                                    isIconOnly
+                                                    variant="light"
+                                                    aria-label="Export CV"
+                                                    className="text-cyan-500 dark:text-cyan-400"
+                                                    onPress={() => { router.push(`/dashboard/export-cv?websiteId=${website._id}`) }}
+                                                >
+                                                    <FiDownload />
+                                                </Button>
+                                            </Tooltip>
 
                                         </div>
                                         <Button

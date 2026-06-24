@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Kbd } from "@heroui/react";
 import { Input } from "@heroui/react";
 import { Textarea } from "@heroui/react";
+import AIEnhanceButton from "@/components/ui/AIEnhanceButton";
 
 // 📌 Define validation schema using Zod
 const portfolioSchema = z.object({
@@ -156,7 +157,14 @@ export function TemplateAForm({ onSubmit }: { onSubmit: (data: PortfolioFormData
           </div>
 
           {/* Description */}
-          <div>
+          <div className="relative pt-8">
+            <div className="absolute right-0 top-0 z-10">
+              <AIEnhanceButton 
+                originalText={watch("description")} 
+                context={watch("occupation")} 
+                onEnhanced={(text) => setValue("description", text, { shouldValidate: true })} 
+              />
+            </div>
             <Textarea
               {...register("description")}
               label="Professional Summary"

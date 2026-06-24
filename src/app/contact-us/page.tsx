@@ -29,8 +29,8 @@ export default function ContactPage() {
       <section className={`lg:py-20 py-10 ${darkMode ? 'bg-gray-950' : 'bg-gray-50'} relative overflow-hidden`}>
         {/* Background Glow Effect */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-1/4 -left-16 w-72 h-72 rounded-full bg-purple-500 blur-3xl opacity-20 animate-pulse"></div>
-          <div className="absolute bottom-1/4 -right-16 w-72 h-72 rounded-full bg-blue-500 blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute top-1/4 -left-16 w-72 h-72 rounded-full bg-slate-500 blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute bottom-1/4 -right-16 w-72 h-72 rounded-full bg-indigo-500 blur-3xl opacity-20 animate-pulse"></div>
         </div>
 
         <div className="container mx-auto px-6 max-w-6xl relative z-10">
@@ -200,9 +200,9 @@ export default function ContactPage() {
                     </svg>
                   }
                   className={`w-full md:w-auto px-8 py-6 font-medium ${darkMode
-                    ? 'bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 text-white'
-                    : 'bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-400 hover:to-blue-400 text-white'
-                    } rounded-lg transition-transform hover:scale-105 transform`}
+                    ? 'bg-gradient-to-r from-indigo-600 to-slate-800 hover:from-indigo-500 hover:to-slate-700 text-white'
+                    : 'bg-gradient-to-r from-indigo-500 to-slate-800 hover:from-indigo-400 hover:to-slate-700 text-white'
+                    } rounded-full shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1 transform`}
                 >
                   Send Message
                 </Button>

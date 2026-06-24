@@ -67,7 +67,7 @@ const PricingPage = () => {
         <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
             {/* Animated Background */}
             <div className="absolute inset-0">
-                <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-slate-500/20 to-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
                 <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-r from-pink-500/20 to-orange-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: "4s" }}></div>
             </div>
@@ -92,7 +92,7 @@ const PricingPage = () => {
                 {/* Header Section */}
                 <div className="text-center mb-6 lg:mb-16">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                        Choose Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Plan</span>
+                        Choose Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-800 to-indigo-600 dark:from-white dark:to-indigo-400">Plan</span>
                     </h1>
                     <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
                         Select the perfect plan for your needs. Upgrade or downgrade at any time.
@@ -258,7 +258,7 @@ const PricingPage = () => {
                             There are lot of templates that you can start with free of charge. Upgrade anytime. No commitments, cancel anytime.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button onClick={() => router.push('/templates-preview')} className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                            <button onClick={() => router.push('/templates-preview')} className="px-8 py-4 bg-gradient-to-r from-slate-800 to-indigo-600 text-white font-semibold rounded-full hover:from-slate-700 hover:to-indigo-500 transform hover:-translate-y-1 transition-all duration-300 shadow-xl">
                                 Go to Templates
                             </button>
                             <button className="px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-2xl hover:border-white/40 hover:bg-white/10 transform hover:scale-105 transition-all duration-300">

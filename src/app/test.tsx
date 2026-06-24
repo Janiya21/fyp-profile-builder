@@ -431,7 +431,7 @@ function HomeContent() {
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="text-center mb-16">
                         <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-                            Why Start With WebQuen ?
+                            Why Start With ProfiMake ?
                         </h2>
                         <p className={`text-lg max-w-2xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                             The perfect toolkit to launch your professional online presence.
@@ -497,7 +497,7 @@ function HomeContent() {
                 <div className="container mx-auto px-6 text-center relative z-10">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Dream Portfolio?</h2>
                     <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-                        Join thousands of professionals who showcase their work with WebQuen.
+                        Join thousands of professionals who showcase their work with ProfiMake.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Button
@@ -532,8 +532,8 @@ function HomeContent() {
                         {/* Brand Column */}
                         <div className="mb-8 md:mb-0">
                             <h2 className="text-2xl font-bold flex items-center">
-                                <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>Web</span>
-                                <span className="text-blue-500">Quen</span>
+                                <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>Profi</span>
+                                <span className="text-blue-500">Make</span>
                             </h2>
                             <p className={`mt-2 max-w-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                                 Creating stunning portfolios with customizable templates. Build your brand online in minutes.

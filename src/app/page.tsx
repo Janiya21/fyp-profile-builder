@@ -196,10 +196,7 @@ function HomeContent() {
         <Navbar
           onMenuOpenChange={setIsMenuOpen}
           isBordered={false}
-          className={`fixed top-0 backdrop-blur-md bg-opacity-30 ${darkMode
-            ? 'dark bg-gray-900/70 border-gray-700'
-            : 'bg-white/70 border-gray-200'
-            } shadow-lg z-40`}
+          className={`fixed top-0 backdrop-blur-xl bg-white/50 border-b border-white/20 shadow-sm z-40 transition-all duration-500`}
           maxWidth="full"
         >
           {/* Left side - Logo and Mobile Menu Toggle */}
@@ -277,7 +274,7 @@ function HomeContent() {
         {/* Hero Section */}
         <div className="min-h-screen mt-10 lg:mt-0 relative overflow-hidden">
           {/* Animated Background with White Base */}
-          <div className="absolute inset-0 bg-gradient-to-br from-violet-200 via-white to-white">
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-indigo-50/30 to-white">
             {/* Floating geometric shapes */}
             <div className="absolute inset-0">
               <div
@@ -367,10 +364,10 @@ function HomeContent() {
                         routeUser();
                         triggerConfetti();
                       }}
-                      className="group relative overflow-hidden px-10 py-5 rounded-3xl text-lg font-bold text-white transition-all duration-500 transform hover:scale-105 hover:rotate-1"
+                      className="group relative overflow-hidden px-10 py-5 rounded-full text-lg font-bold text-white transition-all duration-500 transform hover:scale-105 hover:-translate-y-1"
                       style={{
-                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                        boxShadow: '0 10px 30px rgba(102, 126, 234, 0.4), 0 0 0 1px rgba(255,255,255,0.1) inset'
+                        background: 'linear-gradient(135deg, #0f172a 0%, #3730a3 100%)',
+                        boxShadow: '0 20px 40px -15px rgba(55, 48, 163, 0.5), 0 0 0 1px rgba(255,255,255,0.1) inset'
                       }}
                     >
                       {/* Animated background layers */}
@@ -397,7 +394,7 @@ function HomeContent() {
                     </button>
 
                     <button
-                      className="px-10 py-5 text-lg font-semibold bg-white/80 backdrop-blur-md text-gray-800 border-2 border-gray-200 rounded-3xl hover:bg-white hover:border-indigo-300 hover:text-indigo-700 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                      className="px-10 py-5 text-lg font-semibold bg-white/60 backdrop-blur-xl text-slate-800 border border-slate-200 rounded-full hover:bg-white hover:border-indigo-400 hover:text-indigo-700 transition-all duration-300 hover:scale-105 hover:shadow-xl"
                       onClick={() => { router.push("/templates-preview"); setLoading(true); }}
                     >
                       View Templates
@@ -460,7 +457,7 @@ function HomeContent() {
         </div>
 
         {/* Features Section */}
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+        <div className="min-h-screen bg-[#0f172a] relative overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -498,7 +495,7 @@ function HomeContent() {
                       filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))'
                     }}
                   >
-                    Why Start With WebQuen ?
+                    Why Start With ProfiMake ?
                   </h2>
                   <div className="absolute -inset-4 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-full blur-2xl -z-10"></div>
                 </div>

@@ -46,10 +46,10 @@ export default function TemplateSelector() {
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
                         <div className="px-2">
                             <div className="relative">
-                                <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x">
+                                <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-slate-800 via-indigo-700 to-slate-800 dark:from-white dark:via-indigo-300 dark:to-white bg-clip-text text-transparent animate-gradient-x">
                                     Template Gallery
                                 </h1>
-                                <div className="absolute -inset-4 bg-gradient-to-r from-indigo-600/20 via-purple-600/20 to-pink-600/20 blur-xl rounded-full opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="absolute -inset-4 bg-gradient-to-r from-slate-400/20 via-indigo-600/20 to-slate-400/20 blur-xl rounded-full opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
                             </div>
                             <p className={`mt-4 text-base ${darkMode ? 'text-gray-300' : 'text-gray-700'} sm:text-xl transform hover:translate-x-2 transition-transform duration-300`}>
                                 Choose from a variety of templates and make your mark.
@@ -87,14 +87,14 @@ export default function TemplateSelector() {
                                     key={cat}
                                     onClick={() => setActiveCategory(cat)}
                                     className={`px-6 ms-5 mt-3 py-3 rounded-full whitespace-nowrap text-sm font-medium transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 hover:shadow-lg ${activeCategory === cat
-                                        ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/25 scale-105'
+                                        ? 'bg-gradient-to-r from-slate-800 to-indigo-600 text-white shadow-lg shadow-indigo-500/25 scale-105'
                                         : darkMode
-                                            ? 'bg-gray-700/80 text-gray-300 hover:bg-gray-600 shadow-md'
-                                            : 'bg-white/80 text-gray-700 hover:bg-gray-50 shadow-md backdrop-blur-sm'
+                                            ? 'bg-gray-800/80 text-gray-300 hover:bg-gray-700 shadow-md'
+                                            : 'bg-white/80 text-gray-700 hover:bg-slate-50 shadow-md backdrop-blur-sm'
                                         }`}
                                     style={{
                                         animationDelay: `${index * 100}ms`,
-                                        boxShadow: activeCategory === cat ? '0 8px 25px rgba(99, 102, 241, 0.3)' : undefined
+                                        boxShadow: activeCategory === cat ? '0 8px 25px rgba(49, 46, 129, 0.3)' : undefined
                                     }}
                                 >
                                     {cat}

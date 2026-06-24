@@ -243,8 +243,8 @@ function TemplateSelector({ pfUserId }: { pfUserId: string | null }) {
 
             {(sub === "none" && webLength == 0) && (
               <div className="mb-8 transform hover:scale-[1.02] transition-all duration-300">
-                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 p-4 sm:p-6 shadow-lg">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-indigo-400/10 animate-pulse"></div>
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-50 to-indigo-50 border border-slate-200 p-4 sm:p-6 shadow-xl">
+                  <div className="absolute inset-0 bg-gradient-to-r from-slate-400/10 to-indigo-400/10 animate-pulse"></div>
                   <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div className="flex items-start sm:items-center gap-3">
                       <div className="p-2 bg-blue-100 rounded-full animate-bounce flex-shrink-0">
@@ -256,7 +256,7 @@ function TemplateSelector({ pfUserId }: { pfUserId: string | null }) {
                     </div>
                     <Button
                       size="sm"
-                      className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:from-blue-600 hover:to-indigo-600 transform hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto sm:size-lg"
+                      className="bg-gradient-to-r from-slate-800 to-indigo-600 text-white hover:from-slate-700 hover:to-indigo-500 transform hover:-translate-y-1 transition-all duration-300 shadow-xl rounded-full w-full sm:w-auto sm:size-lg"
                       onClick={() => window.location.href = '/pricing'}
                     >
                       🚀 Go Premium

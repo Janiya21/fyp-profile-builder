@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useForm, useFieldArray } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import AIEnhanceButton from "@/components/ui/AIEnhanceButton";
 
 // Validation schema
 const portfolioSchema = z.object({
@@ -57,6 +58,8 @@ export function TemplateBForm({ onSubmit }: { onSubmit: (data: PortfolioFormData
     register,
     handleSubmit,
     control,
+    watch,
+    setValue,
     formState: { errors },
   } = useForm<PortfolioFormData>({
     resolver: zodResolver(portfolioSchema),
@@ -179,7 +182,14 @@ export function TemplateBForm({ onSubmit }: { onSubmit: (data: PortfolioFormData
             {errors.address && <p className="text-red-500 text-xs mt-1">{errors.address.message}</p>}
           </div>
 
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 relative pt-8">
+            <div className="absolute right-0 top-0 z-10">
+              <AIEnhanceButton 
+                originalText={watch("description")} 
+                context={watch("occupation")} 
+                onEnhanced={(text) => setValue("description", text, { shouldValidate: true })} 
+              />
+            </div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Description*</label>
             <textarea
               {...register("description")}
@@ -345,7 +355,14 @@ export function TemplateBForm({ onSubmit }: { onSubmit: (data: PortfolioFormData
               )}
             </div>
 
-            <div>
+            <div className="relative pt-8">
+              <div className="absolute right-0 top-0 z-10">
+                <AIEnhanceButton 
+                  originalText={watch(`experience.${index}.description`) || ""} 
+                  context={`${watch(`experience.${index}.title`)} at ${watch(`experience.${index}.company`)}`} 
+                  onEnhanced={(text) => setValue(`experience.${index}.description`, text, { shouldValidate: true })} 
+                />
+              </div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Description</label>
               <textarea
                 placeholder="Describe your role and responsibilities"
@@ -399,7 +416,14 @@ export function TemplateBForm({ onSubmit }: { onSubmit: (data: PortfolioFormData
               )}
             </div>
 
-            <div className="mb-3">
+            <div className="mb-3 relative pt-8">
+              <div className="absolute right-0 top-0 z-10">
+                <AIEnhanceButton 
+                  originalText={watch(`projects.${index}.description`) || ""} 
+                  context={`Project Name: ${watch(`projects.${index}.name`)}`} 
+                  onEnhanced={(text) => setValue(`projects.${index}.description`, text, { shouldValidate: true })} 
+                />
+              </div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Description*</label>
               <textarea
                 placeholder="Describe your project"
