@@ -111,12 +111,12 @@ const userDataTemplateD = {
   },
   summary: "Visionary leader with 15+ years of experience driving organizational transformation and delivering shareholder value. Proven track record in strategic planning, operational excellence, and building high-performance teams across global markets.",
   coreCompetencies: [
-    {value:"Corporate Strategy Development"},
-    {value:"Financial Performance Optimization"},
-    {value:"Mergers & Acquisitions"},
-    {value:"Global Market Expansion"},
-    {value:"Stakeholder Relations"},
-    {value:"Digital Transformation"}
+    { value: "Corporate Strategy Development" },
+    { value: "Financial Performance Optimization" },
+    { value: "Mergers & Acquisitions" },
+    { value: "Global Market Expansion" },
+    { value: "Stakeholder Relations" },
+    { value: "Digital Transformation" }
   ],
   experience: [
     {
@@ -125,9 +125,9 @@ const userDataTemplateD = {
       location: "New York, NY",
       years: "2018-Present",
       achievements: [
-        {value:"Led company through successful IPO, achieving 300% shareholder return in 3 years"},
-        {value:"Expanded operations to 12 new countries, increasing revenue by $450M annually"},
-        {value:"Spearheaded digital transformation initiative reducing operational costs by 28%"}
+        { value: "Led company through successful IPO, achieving 300% shareholder return in 3 years" },
+        { value: "Expanded operations to 12 new countries, increasing revenue by $450M annually" },
+        { value: "Spearheaded digital transformation initiative reducing operational costs by 28%" }
       ]
     },
     {
@@ -136,9 +136,9 @@ const userDataTemplateD = {
       location: "Chicago, IL",
       years: "2012-2018",
       achievements: [
-        {value:"Directed post-merger integration of $2.4B acquisition"},
-        {value:"Developed Asia-Pacific market strategy resulting in 40% revenue growth"},
-        {value:"Implemented cost restructuring saving $75M annually"}
+        { value: "Directed post-merger integration of $2.4B acquisition" },
+        { value: "Developed Asia-Pacific market strategy resulting in 40% revenue growth" },
+        { value: "Implemented cost restructuring saving $75M annually" }
       ]
     },
     {
@@ -147,9 +147,9 @@ const userDataTemplateD = {
       location: "London, UK",
       years: "2007-2012",
       achievements: [
-        {value:"Led turnaround strategy for Fortune 500 retail client"},
-        {value:"Developed operational efficiency framework adopted company-wide"},
-        {value:"Mentored 15+ junior consultants in client engagement strategies"}
+        { value: "Led turnaround strategy for Fortune 500 retail client" },
+        { value: "Developed operational efficiency framework adopted company-wide" },
+        { value: "Mentored 15+ junior consultants in client engagement strategies" }
       ]
     }
   ],
@@ -192,9 +192,9 @@ export const templates = [
     category: "Professional",
     rating: 4.5,
     users: 3,
-    previewImage: "/images/bgl.png",
+    previewImage: "https://devrg.s3.eu-north-1.amazonaws.com/p1.png",
     sampleData: userDataTemplateB,
-    pdf:true
+    pdf: true
   },
   {
     id: "TemplateL",
@@ -205,10 +205,10 @@ export const templates = [
     category: "Professional",
     rating: 4.5,
     users: 6,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/newx1.avif",
+    previewImage: "https://devrg.s3.eu-north-1.amazonaws.com/p2.png",
     sampleData: userDataTemplateB,
-    pdf:true
-  },{
+    pdf: true
+  }, {
     id: "TemplateM",
     name: "Professional White 3",
     component: TemplateM,
@@ -217,9 +217,9 @@ export const templates = [
     category: "Professional",
     rating: 4.5,
     users: 6,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/newx2.avif",
+    previewImage: "https://devrg.s3.eu-north-1.amazonaws.com/p3.png",
     sampleData: userDataTemplateB,
-    pdf:true
+    pdf: true
   },
   {
     id: "TemplateC",
@@ -230,9 +230,9 @@ export const templates = [
     category: "Professional",
     rating: 4.7,
     users: 11,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/bhj.png",
+    previewImage: "https://devrg.s3.eu-north-1.amazonaws.com/p4.png",
     sampleData: userDataTemplateB,
-    pdf:true
+    pdf: true
   },
   {
     id: "TemplateE",
@@ -243,9 +243,9 @@ export const templates = [
     category: "Creative",
     rating: 4.7,
     users: 12,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/mka.avif",
+    previewImage: "https://devrg.s3.eu-north-1.amazonaws.com/p5.png",
     sampleData: userDataTemplateB,
-    pdf:true
+    pdf: true
   },
   {
     id: "TemplateD",
@@ -256,9 +256,9 @@ export const templates = [
     category: "Creative",
     rating: 4.6,
     users: 12,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/bna.avif",
+    previewImage: "https://devrg.s3.eu-north-1.amazonaws.com/p6.png",
     sampleData: userDataTemplateD,
-    pdf:false
+    pdf: false
   },
   {
     id: "TemplateF",
@@ -269,60 +269,60 @@ export const templates = [
     category: "Professional",
     rating: 4.5,
     users: 14,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/me.avif",
+    previewImage: "https://devrg.s3.eu-north-1.amazonaws.com/p7.png",
     sampleData: userDataTemplateD,
-    pdf:false
+    pdf: false
   },
-  {
-    id: "TemplateG",
-    name: "Black Hacker",
-    component: TemplateG,
-    form: TemplateFForm,
-    editForm: EditTemplateFormE,
-    category: "Premium",
-    rating: 4.7,
-    users: 1,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/hacker.avif",
-    sampleData: userDataTemplateD,
-    pdf:false
-  },
-  {
-    id: "TemplateH",
-    name: "Pink Geek",
-    component: TemplateH,
-    form: TemplateFForm,
-    editForm: EditTemplateFormE,
-    category: "Premium",
-    rating: 4.7,
-    users: 2,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/bvn.avif",
-    sampleData: userDataTemplateD,
-    pdf:false
-  },
-  {
-    id: "TemplateI",
-    name: "Professional Gaming",
-    component: TemplateI,
-    form: TemplateFForm,
-    editForm: EditTemplateFormE,
-    category: "Premium",
-    rating: 4.7,
-    users: 112,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/gem.avif",
-    sampleData: userDataTemplateD,
-    pdf:false
-  },
-  {
-    id: "TemplateJ",
-    name: "Sportman",
-    component: TemplateJ,
-    form: TemplateFForm,
-    editForm: EditTemplateFormE,
-    category: "Premium",
-    rating: 4.7,
-    users: 112,
-    previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/gyma.avif",
-    sampleData: userDataTemplateD,
-    pdf:false
-  }
+  // {
+  //   id: "TemplateG",
+  //   name: "Black Hacker",
+  //   component: TemplateG,
+  //   form: TemplateFForm,
+  //   editForm: EditTemplateFormE,
+  //   category: "Premium",
+  //   rating: 4.7,
+  //   users: 1,
+  //   previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/hacker.avif",
+  //   sampleData: userDataTemplateD,
+  //   pdf: false
+  // },
+  // {
+  //   id: "TemplateH",
+  //   name: "Pink Geek",
+  //   component: TemplateH,
+  //   form: TemplateFForm,
+  //   editForm: EditTemplateFormE,
+  //   category: "Premium",
+  //   rating: 4.7,
+  //   users: 2,
+  //   previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/bvn.avif",
+  //   sampleData: userDataTemplateD,
+  //   pdf: false
+  // },
+  // {
+  //   id: "TemplateI",
+  //   name: "Professional Gaming",
+  //   component: TemplateI,
+  //   form: TemplateFForm,
+  //   editForm: EditTemplateFormE,
+  //   category: "Premium",
+  //   rating: 4.7,
+  //   users: 112,
+  //   previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/gem.avif",
+  //   sampleData: userDataTemplateD,
+  //   pdf: false
+  // },
+  // {
+  //   id: "TemplateJ",
+  //   name: "Sportman",
+  //   component: TemplateJ,
+  //   form: TemplateFForm,
+  //   editForm: EditTemplateFormE,
+  //   category: "Premium",
+  //   rating: 4.7,
+  //   users: 112,
+  //   previewImage: "https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/gyma.avif",
+  //   sampleData: userDataTemplateD,
+  //   pdf: false
+  // }
 ];

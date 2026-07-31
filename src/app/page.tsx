@@ -196,7 +196,7 @@ function HomeContent() {
         <Navbar
           onMenuOpenChange={setIsMenuOpen}
           isBordered={false}
-          className={`fixed top-0 backdrop-blur-xl bg-white/50 border-b border-white/20 shadow-sm z-40 transition-all duration-500`}
+          className={`fixed top-0 backdrop-blur-xl px-2 md:px-20 bg-white/50 border-b border-white/20 shadow-sm z-40 transition-all duration-500`}
           maxWidth="full"
         >
           {/* Left side - Logo and Mobile Menu Toggle */}
@@ -207,9 +207,9 @@ function HomeContent() {
             />
             <NavbarBrand>
               <img
-                src="https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/mainlogo.png"
+                src="https://devrg.s3.eu-north-1.amazonaws.com/pplogo.jpg"
                 alt="logo"
-                className="w-28 h-18 hover:scale-105 transition-transform duration-300"
+                className="w-[10vw] h-18 hover:scale-105 transition-transform duration-300"
               />
             </NavbarBrand>
           </NavbarContent>
@@ -441,7 +441,7 @@ function HomeContent() {
                       <div className={''}>
                         <div className="relative overflow-hidden rounded-lg">
                           <img
-                            src="https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/logo-2.avif"
+                            src="https://devrg.s3.eu-north-1.amazonaws.com/pplogo.jpg"
                             alt="Portfolio Preview"
                             className="rounded-lg w-full max-w-lg mx-auto transition-all duration-500 hover:brightness-110" />
                           <div className="absolute inset-0 rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-500"></div>

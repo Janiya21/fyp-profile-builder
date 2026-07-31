@@ -24,12 +24,12 @@ const CommonNav = () => {
                         className="sm:hidden"
                     />
                     <NavbarBrand>
-                        <Link href="/" className='lg:-ms-32' passHref>
-                            <Image
-                                src="https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/wqen.png"
+                        <Link href="/" className='lg:-ms-36' passHref>
+                            <img
+                                src="https://devrg.s3.eu-north-1.amazonaws.com/pplogo.jpg"
                                 alt="logo"
-                                width={112} // adjust as needed
-                                height={72}
+                                width={150} // adjust as needed
+                                height={92}
                                 className=""
                             />
                         </Link>

@@ -19,8 +19,8 @@ const Footer = () => {
                                 className="w-28 h-18 hover:scale-105 transition-transform duration-300"
                             /> */}
                             <h2 className="text-2xl font-bold flex items-center">
-                                <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>Web</span>
-                                <span className="text-blue-500">Quen</span>
+                                <span className={darkMode ? 'text-purple-400' : 'text-purple-600'}>Portfolio</span>
+                                <span className="text-blue-500">Pro</span>
                             </h2>
                             <p className={`mt-2 max-w-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                                 Creating stunning portfolios with customizable templates. Build your brand online in minutes.

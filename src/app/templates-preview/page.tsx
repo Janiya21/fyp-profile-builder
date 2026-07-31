@@ -41,8 +41,8 @@ export default function TemplateSelector() {
 
             <CommonNav />
 
-            <div className="px-4 md:px-8 lg:px-12 py-8">
-                <div className="relative z-10 container  lg:px-12 mx-auto">
+            <div className="px-4 md:px-8 lg:px-20 py-8">
+                <div className="relative z-10 container lg:px-28 mx-auto">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
                         <div className="px-2">
                             <div className="relative">

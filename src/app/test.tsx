@@ -14,7 +14,7 @@ import TypewriterHeading from "@/components/TypeWritterWord";
 import Spline from '@splinetool/react-spline';
 
 // Enhanced 3D Components
-const FloatingCard = ({ children, className = '', delay = 0 }:{children:any, className?:string, delay?:number}) => {
+const FloatingCard = ({ children, className = '', delay = 0 }: { children: any, className?: string, delay?: number }) => {
     return (
         <div
             className={`transform transition-all duration-1000 ease-out ${className}`}
@@ -27,7 +27,7 @@ const FloatingCard = ({ children, className = '', delay = 0 }:{children:any, cla
     );
 };
 
-const Particle = ({ delay }:{delay:number}) => {
+const Particle = ({ delay }: { delay: number }) => {
     return (
         <div
             className="absolute w-1 h-1 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full opacity-60"
@@ -192,7 +192,9 @@ function HomeContent() {
                         className="sm:hidden"
                     />
                     <NavbarBrand>
-                        <img src="https://jsr-dev-portfolio.s3.eu-north-1.amazonaws.com/wqen.png" alt="logo" className="w-28 h-18" />
+                        <img
+                            src="https://devrg.s3.eu-north-1.amazonaws.com/pplogo.jpg"
+                            alt="logo" className="w-28 h-18" />
                     </NavbarBrand>
                 </NavbarContent>
 
